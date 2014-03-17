@@ -1,0 +1,17 @@
+<%= form_for(@governance_score_yahoo) do |f| %>
+  <% if @governance_score_yahoo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@governance_score_yahoo.errors.count, "error") %> prohibited this governance_score_yahoo from being saved:</h2>
+
+      <ul>
+      <% @governance_score_yahoo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

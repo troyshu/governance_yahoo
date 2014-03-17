@@ -1,0 +1,37 @@
+<h1>Listing governance_score_yahoos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>For Date</th>
+      <th>Audit</th>
+      <th>Board</th>
+      <th>Shareholder Rights</th>
+      <th>Compensation</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @governance_score_yahoos.each do |governance_score_yahoo| %>
+      <tr>
+        <td><%= governance_score_yahoo.symbol %></td>
+        <td><%= governance_score_yahoo.forDate %></td>
+        <td><%= governance_score_yahoo.audit %></td>
+        <td><%= governance_score_yahoo.board %></td>
+        <td><%= governance_score_yahoo.shareholderRights %></td>
+        <td><%= governance_score_yahoo.compensation %></td>
+        <td><%= link_to 'Show', governance_score_yahoo %></td>
+        <td><%= link_to 'Edit', edit_governance_score_yahoo_path(governance_score_yahoo) %></td>
+        <td><%= link_to 'Destroy', governance_score_yahoo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Governance score yahoo', new_governance_score_yahoo_path %>
