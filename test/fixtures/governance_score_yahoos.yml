@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  symbol: MyString
+  forDate: 2014-03-14
+  quickscore: 1
+  audit: 1
+  board: 1
+  shareholderRights: 1
+  compensation: 1
+
+two:
+  symbol: MyString
+  forDate: 2014-03-14
+  quickscore: 1
+  audit: 1
+  board: 1
+  shareholderRights: 1
+  compensation: 1
